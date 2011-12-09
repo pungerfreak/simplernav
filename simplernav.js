@@ -1,5 +1,5 @@
 /*
- * jQuery simplerNav v0.1 - jQuery plugin
+ * jQuery simplerNav v0.2 - jQuery plugin
  * Copyright (c) 2011 Daniel Greenlaw
  * loosely based on a non-plugin script released free from
  * http://javascript-array.com/scripts/jquery_simple_drop_down_menu/
@@ -25,7 +25,7 @@
         cancel_timer();
 
         item = subnav(this);
-        item.addClass('visible');
+        item.css({display:''});
       }).bind('mouseout', function() {
         close = window.setTimeout(close_navigation, options.timeout);
       });
@@ -36,7 +36,7 @@
 
       close_navigation = function() {
         if (item) {
-          item.removeClass('visible');
+          item.css({display:'none'});
         }
       }
 
