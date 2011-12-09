@@ -1,0 +1,4 @@
+Version 0.1 - June 9, 2011
+===================================================================================================
+* Initial release provides basic ability to add single-level drop down functionality to an ordered or unordered list
+* Allows for an optional delay parameter defining amount of time to allow sloppy mouse movement outside of navigation constraints (defaults to 500ms)
